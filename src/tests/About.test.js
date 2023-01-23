@@ -19,10 +19,10 @@ describe('Testa o componente About.', () => {
     renderWithRouter(<About />);
 
     const firstParagraph = screen.getByText(
-      'This application simulates a Pokédex, a digital encyclopedia containing all Pokémon',
+      /this application simulates a pokédex, a digital encyclopedia containing all pokémon/i,
     );
     const secondParagraph = screen.getByText(
-      'One can filter Pokémon by type, and see more details for each one of them',
+      /one can filter pokémon by type, and see more details for each one of them/i,
     );
 
     expect(firstParagraph && secondParagraph).toBeInTheDocument();

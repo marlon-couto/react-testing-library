@@ -32,7 +32,7 @@ describe('Testa o componente About.', () => {
     renderWithRouter(<About />);
 
     const imageUrl = 'https://cdn2.bulbagarden.net/upload/thumb/8/86/Gen_I_Pok%C3%A9dex.png/800px-Gen_I_Pok%C3%A9dex.png';
-    const pokedexImage = screen.getByRole('img', { alt: 'Pokédex', src: imageUrl });
+    const pokedexImage = screen.getByRole('img', { name: 'Pokédex', src: imageUrl });
 
     expect(pokedexImage.src).toBe(imageUrl);
   });

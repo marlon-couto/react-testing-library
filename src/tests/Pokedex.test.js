@@ -5,9 +5,7 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 
 import renderWithRouter from '../renderWithRouter';
-import data from '../data';
-
-const pokemonList = data;
+import pokemonList from '../data';
 
 describe('Testa o componente Pokedex.', () => {
   it('a página contém um heading h2 o texto "Encountered Pokémon".', () => {

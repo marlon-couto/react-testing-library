@@ -18,8 +18,7 @@ describe('Testa o componente Pokemon.', () => {
     const pokemonWeight = screen.getByTestId('pokemon-weight');
     expect(pokemonWeight).toHaveTextContent(/average weight: 6.0 kg/i);
 
-    const imageUrl =
-      'https://archives.bulbagarden.net/media/upload/b/b2/Spr_5b_025_m.png';
+    const imageUrl = 'https://archives.bulbagarden.net/media/upload/b/b2/Spr_5b_025_m.png';
     const pokemonImage = screen.getByRole('img', {
       name: 'Pikachu sprite',
       src: imageUrl,
